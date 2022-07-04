@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MarcasComponent implements OnInit {
 
-  constructor() { }
+  public titulo: string;
+
+  constructor() { 
+
+    this.titulo="Marcas";
+
+  }
 
   ngOnInit(): void {
   }
