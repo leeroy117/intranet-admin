@@ -15,6 +15,10 @@ const routes: Routes = [
       {
         path: 'marcas',
         loadChildren: () => import('../@pages/marcas/marcas.module').then(m => m.MarcasModule)
+      },
+      {
+        path: 'historia',
+        loadChildren: () => import('../@pages/historia/historia.module').then(m => m.HistoriaModule)
       }
     ]
   },
