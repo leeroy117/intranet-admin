@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HistoriaComponent implements OnInit {
 
-  constructor() { }
+
+  public titulo: string;
+
+  constructor() { 
+
+    this.titulo="Historia";
+
+  }
 
   ngOnInit(): void {
   }
