@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-historia',
   templateUrl: './historia.component.html',
@@ -17,6 +18,10 @@ export class HistoriaComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    $.getScript('../assets/ramon/movimiento.js');
   }
+
+  
+
 
 }
