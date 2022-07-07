@@ -21,7 +21,7 @@ const routes: Routes = [
         loadChildren: () => import('../@pages/historia/historia.module').then(m => m.HistoriaModule)
       },
       {
-        path: 'userprofile',
+        path: 'directorio/userprofile',
         loadChildren: () => import('../@pages/userprofile/userprofile.module').then(m => m.UserprofileModule)
       }
     ]

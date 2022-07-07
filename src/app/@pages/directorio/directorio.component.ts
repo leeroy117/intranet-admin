@@ -9,6 +9,17 @@ export class DirectorioComponent implements OnInit {
 
   public titulo: string;
 
+  public trabajadores =[
+    "Ernesto Torres",
+    "Leeroy Garcia",
+    "David Gonzalez",
+    "Armando Sánchez",
+    "Monica Mejía",
+    "Adriana Hernández",
+    "Jonathan Martínez",
+    "Ramón Vazquez"
+  ]
+
   constructor() { 
 
     this.titulo="Directorio";
