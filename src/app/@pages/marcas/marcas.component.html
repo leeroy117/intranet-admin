@@ -9,40 +9,13 @@
 </div>
 <div class="container-fluid"> 
     <div class="row">
-
-        <div class="col-sm-12 col-md-6 col-xl-6">
+        <div class="col-sm-12 col-md-6 col-xl-6" *ngFor="let x of marcas">
             <div class="card">
-              <div class="card-header d-flex justify-content-between align-items-center pb-0">
-                <h5>Universidad Mexico Internacional</h5>
+              <div class="card-header d-flex justify-content-between align-items-center pb-0" >
+                <h5>{{x["tl"]}}</h5>
               </div>
               <div class="card-body">
-                <p class="mb-0">Institución de tecnología educativa, de Niveles Superior y Posgrado, Certificaciones Ejecutivas y Títulos Propios.
-                </p>
-              </div>
-            </div>
-          </div>
-      
-          <div class="col-sm-12 col-md-6 col-xl-6">
-            <div class="card">
-              <div class="card-header d-flex justify-content-between align-items-center pb-0">
-                <h5>AG College</h5>
-              </div>
-              <div class="card-body">
-                <p class="mb-0">Institución de tecnología educativa en programas académicos de Bachillerato Oficial Corporativo.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-6 col-xl-6">
-            <div class="card">
-              <div class="card-header d-flex justify-content-between align-items-center pb-0">
-                <h5>Eartha Films</h5>
-              </div>
-              <div class="card-body">
-                <p class="mb-0">Empresa de Producción y Contenido Audiovisual de Negocios, Capacitación 
-                  y Eventos Corporativos.
-                  </p>
+                <p class="mb-0">{{ x["des"] }}</p>
               </div>
             </div>
           </div>
