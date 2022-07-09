@@ -3,15 +3,19 @@ import { CommonModule } from '@angular/common';
 
 import { MarcasRoutingModule } from './marcas-routing.module';
 import { MarcasComponent } from './marcas.component';
+import { PanelModule } from 'src/app/panel/panel.module';
+import { ComponentsModule } from 'src/app/components/components.module';
+
 
 
 @NgModule({
   declarations: [
-    MarcasComponent
+    MarcasComponent,
   ],
   imports: [
     CommonModule,
-    MarcasRoutingModule
+    ComponentsModule,
+    MarcasRoutingModule,
   ]
 })
 export class MarcasModule { }

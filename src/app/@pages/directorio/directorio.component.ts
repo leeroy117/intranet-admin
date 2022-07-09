@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-directorio',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectorioComponent implements OnInit {
 
-  public titulo: string;
+  @Output() title: string = 'Directorio';
 
   public trabajadores =[
     "Ernesto Torres",
@@ -21,9 +21,6 @@ export class DirectorioComponent implements OnInit {
   ]
 
   constructor() { 
-
-    this.titulo="Directorio";
-
   }
   ngOnInit(): void {
   }

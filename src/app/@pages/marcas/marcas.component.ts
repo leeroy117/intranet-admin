@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-marcas',
@@ -7,29 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MarcasComponent implements OnInit {
 
-  public titulo: string;
+  @Output() title: string = 'Marcas';
 
   public marcas =[
     {
-      tl:"Eartha Films",
-      des :"Empresa de Producción y Contenido Audiovisual de Negocios, Capacitación y Eventos Corporativos."
+      title:"Eartha Films",
+      description :"Empresa de Producción y Contenido Audiovisual de Negocios, Capacitación y Eventos Corporativos."
     },
     {
-      tl: "AG College",
-      des:"Institución de tecnología educativa en programas académicos de Bachillerato Oficial Corporativo."
+      title: "AG College",
+      description:"Institución de tecnología educativa en programas académicos de Bachillerato Oficial Corporativo."
     },
     {
-      tl: "Universidad Mexico Internacional",
-      des: 
+      title: "Universidad Mexico Internacional",
+      description: 
       "Institución de tecnología educativa, de Niveles Superior y Posgrado, Certificaciones Ejecutivas y Títulos Propios."
     }
   ]
 
-  constructor() { 
-
-    this.titulo="Marcas";
-
-  }
+  constructor() { }
 
   ngOnInit(): void {
   }
