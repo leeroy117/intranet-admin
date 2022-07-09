@@ -15,7 +15,6 @@ import { FooterComponent } from '../components/@core/footer/footer.component';
     SidebarComponent,
     HeaderComponent,
     FooterComponent,
-    // DirectorioComponent
   ],
   imports: [
     CommonModule,

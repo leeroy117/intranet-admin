@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-userprofile',
@@ -7,11 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserprofileComponent implements OnInit {
 
-  public titulo: string;
+  @Output() title: string = 'UserProfile';
+
   constructor() {
     
-    this.titulo = "UserProfile";
-   
   }
 
   ngOnInit(): void {

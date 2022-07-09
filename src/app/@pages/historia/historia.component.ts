@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 
 
 @Component({
@@ -9,11 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class HistoriaComponent implements OnInit {
 
 
-  public titulo: string;
+  @Output() title: string = 'Historia';
 
   constructor() { 
-
-    this.titulo="Historia";
 
   }
 
