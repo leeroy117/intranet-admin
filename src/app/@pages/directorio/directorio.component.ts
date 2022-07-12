@@ -1,9 +1,10 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Output, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-directorio',
   templateUrl: './directorio.component.html',
-  styleUrls: ['./directorio.component.scss']
+  styleUrls: ['./directorio.component.scss'],
+
 })
 export class DirectorioComponent implements OnInit {
 
