@@ -2,9 +2,7 @@
     <app-page-title [title]="title"></app-page-title>
 </div>
 <div class="container-fluid">
-    <div class="container-fluid user-card"> 
-        <div class="row">
-         <app-card-social *ngFor="let trabajador of trabajadores" [text]="trabajador"></app-card-social>
-        </div>
-    </div>
+ <div class="row"> 
+    <app-card-social *ngFor="let trabajador of trabajadores" [text]="trabajador"></app-card-social>
+ </div>
 </div>
