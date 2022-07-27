@@ -20,12 +20,12 @@ export class LoginService{
 
   
   
-  login( username :string, password: string){
+  login( email :string, password: string){
     const body ={
-      username,
+      email,
       password,
     }
-
+    
     return this.http.post(this.url+'login/signin',body,{headers: new HttpHeaders({
       'Content-Type': 'application/json',
       'Accept': 'application/json',

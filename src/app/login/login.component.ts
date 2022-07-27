@@ -11,7 +11,7 @@ import { LoginService } from '../services/login.service';
 })
 export class LoginComponent implements OnInit {
 
-  username: string='';
+  email: string='';
   password: string='';
   
 
@@ -21,15 +21,20 @@ export class LoginComponent implements OnInit {
   }
 
   login(){
-    const response = this.loginService.login(this.username, this.password)
-  
-        
+    const response = this.loginService.login(this.email, this.password)
 
+    console.log(response);
+    
+  
     response.subscribe(
       (result: any ) =>{
-        if(result.token != null){
+        console.log(result);
+
+        let data = result.data;
+        
+        if(data.token != null){
           console.log("Que tiene:"+result);
-          sessionStorage.setItem('login',result.token);
+          sessionStorage.setItem('login',data.token);
           this.router.navigate(['panel']).then(()=> {
             window.location.reload();
           });
