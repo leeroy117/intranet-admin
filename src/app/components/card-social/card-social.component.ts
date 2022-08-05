@@ -1,5 +1,6 @@
 import { Component, Input,OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-card-social',
   templateUrl: './card-social.component.html',
@@ -9,10 +10,16 @@ export class CardSocialComponent implements OnInit {
 
   @Input() title: string = '';
   @Input() text: string = '';
+  @Input() puesto: string = '';
+
+
 
   constructor() { }
 
   ngOnInit(): void {
+ 
   }
+
+
 
 }

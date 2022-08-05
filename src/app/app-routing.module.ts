@@ -10,7 +10,8 @@ const routes: Routes = [
     loadChildren: () => import('./login/login.module').then(m => m.LoginModule)
   },
   {
-    path: 'panel',canActivate:[SesionService],
+    //path: 'panel',canActivate:[SesionService],
+    path: 'panel',
     loadChildren: () => import('./panel/panel.module').then(m => m.PanelModule),
   },
   {

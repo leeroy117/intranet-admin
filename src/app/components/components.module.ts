@@ -4,6 +4,7 @@ import { PageTitleComponent } from './page-title/page-title.component';
 import { SimpleCardComponent } from './simple-card/simple-card.component';
 import { CardSocialComponent } from './card-social/card-social.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { HistoriaComponent } from './historia/historia.component';
 
 
 
@@ -14,7 +15,8 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     PageTitleComponent,
     SimpleCardComponent,
     CardSocialComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    HistoriaComponent
   ],
   imports: [
     CommonModule
@@ -23,7 +25,8 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     PageTitleComponent,
     SimpleCardComponent,
     CardSocialComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    HistoriaComponent
   ]
 })
 export class ComponentsModule { }

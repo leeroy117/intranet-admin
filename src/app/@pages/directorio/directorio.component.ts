@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, ViewEncapsulation } from '@angular/core';
+import { DirectorioService } from 'src/app/services/directorio.service';
 
 @Component({
   selector: 'app-directorio',
@@ -11,7 +12,7 @@ export class DirectorioComponent implements OnInit {
 
   @Output() title: string = 'Directorio';
 
-  public trabajadores =[
+  /*public trabajadores =[
     "Ernesto Torres",
     "Leeroy Garcia",
     "David Gonzalez",
@@ -20,11 +21,19 @@ export class DirectorioComponent implements OnInit {
     "Adriana Hernández",
     "Jonathan Martínez",
     "Ramón Vazquez"
-  ]
+  ]*/
+  direcList: any =[];
 
-  constructor() { 
+  constructor(private directorioService: DirectorioService) { 
   }
   ngOnInit(): void {
+    this.directorio();
   }
+
+
+  directorio(){
+    this.directorioService.getDirectorio().subscribe ((response: any) =>this.direcList = response.data);
+  }
+
 
 }

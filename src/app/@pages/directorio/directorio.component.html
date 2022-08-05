@@ -3,8 +3,6 @@
 </div>
 <div class="container-fluid">
  <div class="row"> 
-    <app-card-social *ngFor="let trabajador of trabajadores" [text]="trabajador"></app-card-social>
- 
-
+    <app-card-social *ngFor="let trabajador of direcList" [text]="trabajador.nombre"  [puesto]="trabajador.puesto"></app-card-social>
 </div>
 </div>
