@@ -7,7 +7,5 @@
       <h1>Nuestra historia</h1>
     </div>
   </section>
-  <section>
-    <app-historia *ngFor="let historia of histoList "[text]="historia.descripcion" [date]="historia.fecha"></app-historia>
-  </section>
+  <app-line-time *ngFor=" let historia of histoList" [text]="historia.descripcion" [date]="historia.fecha"></app-line-time>
 </div>

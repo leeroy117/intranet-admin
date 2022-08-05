@@ -24,7 +24,7 @@ export class HistoriaComponent implements OnInit {
   }
 
   historia(){
-    this.historiaService.getHistoria().subscribe ((response: any) =>this.histoList = response.data);
+    this.historiaService.getHistoria().subscribe ((response: any) => console.log(this.histoList = response.data));
   }
 
 
