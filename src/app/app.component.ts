@@ -1,5 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import {LoginService  } from './services/login.service';
+import { DirectorioService } from './services/directorio.service';
+import { HistoriaService } from './services/historia.service';
+import { MarcaService } from './services/marca.service';
 import * as $ from 'jquery';
 
 @Component({
@@ -11,7 +14,9 @@ import * as $ from 'jquery';
 export class AppComponent implements OnInit {
   title = 'api_intranet';
 
-  constructor(private loginService: LoginService ){
+  historiaList: any= [];
+
+  constructor(private loginService: LoginService, private direcotioSevice: DirectorioService, private marcaService: MarcaService, private historiaService:HistoriaService){
     console.log('El componente se ha creado');
 
   }
@@ -26,7 +31,8 @@ export class AppComponent implements OnInit {
 
     console.log('El componente se ha inicializado');
     //this.loginService.getLogin().subscribe ((response: any) => console.log(response));
-
+    //this.historiaService.getHistoria().subscribe ((response: any) => console.log(response));
+   // this.historiaService.getHistoria().subscribe ((response: any) => this.historiaList = response);
   }
 
 }
