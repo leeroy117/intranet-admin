@@ -21,7 +21,14 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+
+    "paths": {
+      "@admin/*": ["src/app/@admin/*"],
+      "@admin-core/*": ["src/app/@admin/core/*"],
+      "@assets/*": ["src/assets/*"]
+    },
+
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
