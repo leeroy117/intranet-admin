@@ -14,8 +14,7 @@ export class SimpleCardComponent implements OnInit {
 
   marcList: any = [];
 
-  constructor(private marcaService:MarcaService 
-    ) { }
+  constructor(private marcaService:MarcaService ) { }
 
   ngOnInit(): void {
     this.marcas();

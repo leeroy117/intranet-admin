@@ -2,10 +2,10 @@
   <app-page-title [title]="title"></app-page-title>
 </div>
 <div class="container-fluid" > 
-  <section class="intro">
-    <div class="container">
-      <h1>Nuestra historia</h1>
-    </div>
+  <section>
+    <div class="container-fluid">
+      <app-modal-agregarhistoria></app-modal-agregarhistoria>
+  </div>
   </section>
   <app-line-time *ngFor=" let historia of histoList" [text]="historia.descripcion" [date]="historia.fecha"></app-line-time>
 </div>

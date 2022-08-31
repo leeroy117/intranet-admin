@@ -21,5 +21,18 @@ export class MarcaService {
   };
 
 
+  postMarca( marca :string, descripcion: string){
+    const body ={
+      marca,
+      descripcion,
+    }
+
+     return this.http.post(this.url+'api/v1/marcas/registrarMarca',body,{headers: new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    }),
+    });
+ };
+
 
 }

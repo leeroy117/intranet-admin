@@ -1,4 +1,6 @@
 import { Component, Input,OnInit } from '@angular/core';
+import { DirectorioService } from 'src/app/services/directorio.service';
+
 
 
 @Component({
@@ -9,17 +11,16 @@ import { Component, Input,OnInit } from '@angular/core';
 export class CardSocialComponent implements OnInit {
 
   @Input() title: string = '';
-  @Input() text: string = '';
-  @Input() puesto: string = '';
-
-
-
-  constructor() { }
-
+  colaList: any =[];
+  
+  constructor(private directorioService: DirectorioService) { 
+  }
   ngOnInit(): void {
- 
+    this.colaborador();
   }
 
-
+  colaborador(){
+    this.directorioService.getColaborador().subscribe ((response: any) =>this.colaList = response.data);
+  }
 
 }

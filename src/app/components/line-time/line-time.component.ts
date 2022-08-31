@@ -13,7 +13,7 @@ export class LineTimeComponent implements OnInit {
   @Input() date: string = '';
 
   ngOnInit(): void {
-     $.getScript('../assets/ramon/movimiento.js');
+     //$.getScript('../assets/ramon/movimiento.js');
   }
 
 }
